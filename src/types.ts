@@ -31,7 +31,8 @@ export type Item = {
 	id: string
 	content_type: 'image' | 'video' | string
 	content_path: string
-	duration: number
+	duration: number | 'auto'
+	muted?: boolean
 }
 
 export type MediaItem = {
@@ -41,6 +42,7 @@ export type MediaItem = {
 	duration: number,
 	hidden: boolean,
 	preload: boolean,
+	muted: boolean,
 }
 
 export type MediaSequenceState = {

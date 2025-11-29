@@ -44,7 +44,7 @@ export const MediaItemRenderer = ({ item }: Props) => {
             ref={videoRef}
             style={mediaStyle}
             loop
-            muted
+            muted={item.muted}
         >
             <source src={item.src} type="video/mp4" />
         </video>
